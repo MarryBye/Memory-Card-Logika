@@ -15,7 +15,7 @@ rest_spinbox.setValue(30)
 lbl_sleep_text = QLabel(" minutes")
 
 header_layout.addWidget(btn_menu)
-header_layout.addSpacing(1)
+header_layout.addStretch(1)
 header_layout.addWidget(btn_sleep)
 header_layout.addWidget(rest_spinbox)
 header_layout.addWidget(lbl_sleep_text)

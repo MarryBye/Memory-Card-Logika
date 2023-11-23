@@ -5,7 +5,11 @@ from app import app
 from card_window import card_widget
 from menu_window import menu_widget
 
+WIN_WIDTH, WIN_HEIGHT = 700, 500
+
 window = QMainWindow()
+window.setWindowTitle("Memory Card")
+window.resize(WIN_WIDTH, WIN_HEIGHT)
 
 window_widget = QWidget()
 window_layout = QVBoxLayout()
