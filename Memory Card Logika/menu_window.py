@@ -1,3 +1,4 @@
+from tkinter import Button
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 
@@ -21,6 +22,23 @@ question_form_layout.addRow("Wrong answer 2 text: ", input_wrong2)
 question_form_layout.addRow("Wrong answer 3 text: ", input_wrong3)
 
 menu_layout.addLayout(question_form_layout)
+
+# ===========================================
+
+# Кнопки управления
+
+buttons_layout = QHBoxLayout()
+
+btn_add_question = QPushButton("Add question")
+btn_clear_inputs = QPushButton("Clear inputs")
+
+buttons_layout.addWidget(btn_add_question)
+buttons_layout.addWidget(btn_clear_inputs)
+
+btn_back = QPushButton("Back")
+
+menu_layout.addLayout(buttons_layout)
+menu_layout.addWidget(btn_back)
 
 # ===========================================
 
